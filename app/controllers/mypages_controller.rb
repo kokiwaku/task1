@@ -40,7 +40,7 @@ class MypagesController < ApplicationController
   
   def confirm
     @mypage = Mypage.new(mypages_params)
-    render :new if @mypage.invalid?
+    render:new if @mypage.invalid?
   end
   
   private

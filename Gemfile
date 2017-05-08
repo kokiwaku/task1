@@ -44,8 +44,6 @@ group :development, :test do
   
   gem 'twitter-bootstrap-rails'
 
-  gem 'rails-i18n'
-  
   gem 'rails_12factor', group: :production
  
 end
