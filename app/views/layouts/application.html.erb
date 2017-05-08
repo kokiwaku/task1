@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Task1</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+  
+  <header>
+  <ul>
+    <div><li><%= link_to"トップページ", root_path %></li></div>
+    <div><li><%= link_to"ツイート一覧", mypages_path %></li></div>
+    <div><li><%= link_to"新規作成", new_mypage_path %></li></div>
+  </ul>
+  </header>
+
+  <%= yield %>
+
+  <footer>
+    <p>© Copyright kokiwaku.</p>
+  </footer>
+
+</body>
+</html>

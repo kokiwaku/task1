@@ -1,0 +1,16 @@
+<div class="container">
+  <div class="wrapper col-md-8 col-md-offset-2 col-sm-10">  
+  <h3>以下の内容で、送信する。</h3>
+  
+  <%= form_for(@mypage) do |f| %>
+  <%= f.hidden_field :content %>
+  <p>content:<%= @mypage.content %></p>
+  <%= f.submit "tweetする", class: 'btn btn-primary btn-block' %>
+  <% end %>
+  <%= form_for(@mypage, url: new_mypage_path, method: 'get') do |f| %>
+  <%= f.hidden_field :content %>
+  <%= f.submit "戻る", name:'back', class: 'btn btn-default btn-block'  %>
+  <% end %>
+  
+  </div>
+</div>
